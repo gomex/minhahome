@@ -15,7 +15,7 @@ title = "Gomex's Page"
 theme = "hugo-goa"
 
 ## Hugo Built-in Features
-disqusShortname = "rafaelbritogomes" # Comment out to disable Disqus.
+disqusShortname = "gomex-me" # Comment out to disable Disqus.
 googleAnalytics = "XYZ"
 enableRobotsTXT = true
 
