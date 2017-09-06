@@ -1,0 +1,20 @@
+branches:
+  only:
+  - hugo
+
+sudo: required
+
+services:
+  - docker
+
+script:
+  - docker container run --rm -it -v $(pwd):/src jojomi/hugo hugo
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  target_branch: pages
+  local_dir: public
+  on:
+    branch: master
