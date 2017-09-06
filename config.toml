@@ -1,0 +1,64 @@
+## Basic Configuration
+
+baseurl = "https://gomex.me/"
+builddrafts = false
+canonifyurls = false
+languageCode = "en-US"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+
+author = "Rafael Gomes"
+title = "Gomex's Page"
+
+theme = "hugo-goa"
+
+## Hugo Built-in Features
+disqusShortname = "https-shenoybr-github-io-hugo-goa-demo" # Comment out to disable Disqus.
+googleAnalytics = "XYZ"
+enableRobotsTXT = true
+
+## Site Settings
+[params]
+author = "Rafael Gomes"
+intro = "DevOps Engineer"
+description = "Now @stonepagamentos . Previously @thoughtworks. <br/> [Docker Captain](https://www.docker.com/community/docker-captains)"
+authorimage = "headshot.jpg"
+dateformat = "Jan 2, 2006"
+
+## Site Meta Settings
+[params.meta]
+description = "Simple minimalist theme"
+keywords = "minimalist,blog,goa,hugo,developer"
+
+## Social Accounts
+[params.social]
+github = "gomex"
+linkedin = "rbgomes"
+twitter = "gomex"
+stackoverflow = "gomex"
+email = "me@gomex.me"
+
+## Extras
+[params.extra]
+copyright = "© 2017. Rafael Gomes. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
+poweredby = true
+hightlightjs = true
+
+## Main Menu
+[[menu.main]]
+    name = "blog português"
+    weight = 100
+    identifier = "blog"
+    url = "/blog/"
+[[menu.main]]
+    name = "blog english"
+    weight = 100
+    identifier = "blog-en"
+    url = "/blog-en/"
+[[menu.main]]
+    name = "cv"
+    identifier = "cv"
+    weight = 200
+    url = "https://gomex.github.io/"
