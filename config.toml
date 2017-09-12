@@ -52,11 +52,11 @@ hightlightjs = true
     weight = 100
     identifier = "blog"
     url = "/blog/"
-[[menu.main]]
-    name = "blog english"
-    weight = 100
-    identifier = "blog-en"
-    url = "/blog-en/"
+#[[menu.main]]
+#    name = "blog english"
+#    weight = 100
+#    identifier = "blog-en"
+#    url = "/blog-en/"
 [[menu.main]]
     name = "cv"
     identifier = "cv"
