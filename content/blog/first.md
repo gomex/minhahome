@@ -154,6 +154,10 @@ criado no github em sua conta do travis.
 
 ![Travis](img/travis2.png)
 
+Aproveite e desabilite o build em branch que não tenha o arquivo **.travis.yml**.
+
+![Travis](img/travis3.png)
+
 ### Tokens de acesso
 
 O Travis precisa de acesso a fazer deploy em seu repositório github e pra isso
