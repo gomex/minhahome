@@ -15,8 +15,10 @@ description = "Passos simples para sair de dev e ir para produção"
 ## TL;DR
 
 Esse conteúdo tem como objetivo demonstrar com passos simples e direto um caminho
-sugerido para colocar sua aplicação Docker em produção, seguindo as melhores
+sugerido para colocar sua aplicação em produção, seguindo as melhores
 práticas e com menor custo operacional possível.
+
+Usaremos o Docker para facilitar o processo de deploy da aplicação.
 
 Como não será possível descrever tudo em apenas um texto, esse contéudo será na
 verdade uma série de artigos.
@@ -29,23 +31,28 @@ com docker para desenvolvimento.
 ### Introdução
 
 Muito se fala sobre uso de Docker em desenvolvimento, eu mesmo escrevi
-um [livro](https://leanpub.com/dockerparadesenvolvedores) com esse foco, mas
-pretendo sugerir com essa série um conjunto de boas práticas e dicas para
+um [livro](https://leanpub.com/dockerparadesenvolvedores) sobre esse assunto, mas
+pretendo sugerir, com essa série de artigos, um conjunto de boas práticas e dicas para
 colocar sua aplicação em produção.
-
-A premissa dessa série é a simplicidade, mas sem ignorar as melhores
-práticas. Um bom exemplo é ambiente de alta-disponibilidade, que é tido
-como melhor prática, mas implica em custos que talvez um projeto em fase inicial
-não justifique.
 
 Esse texto tem como premissa que sua aplicação já se encontre "dockerizada" e
 apenas demande por ser colocada em produção.
 
+Teremos como foco a simplicidade do processo, ou seja, não espere criação de
+cluster Docker (Seja Swarm ou Kubernetes) no momento.
+
+Faremos o deploy da aplicação em um host apenas do Docker.
+
+### Aplicação de exemplo
+
+Usaremos uma aplicação simples, mas que seja abrangente o suficiente para exercitar
+alguns assuntos no processo de deploy
+
 ### Começando pelo provedor de infraestrutura
 
-Uma grande dúvida é qual provedor utilizar para subir seus containers docker, e
-muitos costumam sugerir grandes fornecedores, tal como Amazon ou Google, mas
-como o texto preza por simplicidade, vamos utilizar o Digital Ocean.
+Uma grande dúvida é qual provedor utilizar para subir seus containers docker.
+Muitos costumam sugerir grandes fornecedores, tal como Amazon ou Google, mas
+como o texto preza por simplicidade, vamos utilizar o [Digital Ocean](https://www.digitalocean.com/).
 
 #### Criando a máquina Docker Host
 
@@ -62,3 +69,25 @@ em seguida digite o seguinte comando
 ```
 docker-machine create --driver digitalocean --digitalocean-access-token <seu token aqui> digitalocean
 ```
+Após alguns segundos seu Docker host estará pronto na Digital Ocean. Acesse a sua
+lista de máquinas (droplets) para confirmar essa atividade.
+
+#### Usando o Docker Host recém configurado
+
+O docker-machine configurou um ambiente na digital ocean e as definições de acesso
+estão depositadas em sua máquina. Para visualizar todos os ambientes Docker que você
+pode interagir com seu docker-machine digite o seguinte comando:
+
+```
+docker-machine ls
+```
+
+Escolha qual ambiente deseja usar e digite o seguinte comando com o nome do ambiente
+desejado:
+
+```
+eval "$(docker-machine env nome_do_ambiente)"
+```
+
+Todos os comandos docker executados nesse terminal agora estão conectados ao
+docker host hospedado na Digital Ocean.
