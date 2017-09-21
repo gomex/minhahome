@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Gomex&#39;s Page</title>
+    <link>http://gomex.me/tags/</link>
+    <description>Recent content in Tags on Gomex&#39;s Page</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 02 Oct 2016 22:55:05 -0400</lastBuildDate>
+    
+	<atom:link href="http://gomex.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>http://gomex.me/tags/about/</link>
+      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      
+      <guid>http://gomex.me/tags/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Aviato</title>
+      <link>http://gomex.me/tags/aviato/</link>
+      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      
+      <guid>http://gomex.me/tags/aviato/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bachman</title>
+      <link>http://gomex.me/tags/bachman/</link>
+      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      
+      <guid>http://gomex.me/tags/bachman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Belson</title>
+      <link>http://gomex.me/tags/belson/</link>
+      <pubDate>Sun, 02 Oct 2016 15:59:13 -0400</pubDate>
+      
+      <guid>http://gomex.me/tags/belson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>http://gomex.me/tags/blog/</link>
+      <pubDate>Sun, 02 Oct 2016 15:59:13 -0400</pubDate>
+      
+      <guid>http://gomex.me/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>First</title>
+      <link>http://gomex.me/tags/first/</link>
+      <pubDate>Sun, 02 Oct 2016 15:59:13 -0400</pubDate>
+      
+      <guid>http://gomex.me/tags/first/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gavin</title>
+      <link>http://gomex.me/tags/gavin/</link>
+      <pubDate>Sun, 02 Oct 2016 15:59:13 -0400</pubDate>
+      
+      <guid>http://gomex.me/tags/gavin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hardware</title>
+      <link>http://gomex.me/tags/hardware/</link>
+      <pubDate>Sun, 02 Oct 2016 15:59:13 -0400</pubDate>
+      
+      <guid>http://gomex.me/tags/hardware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hooli</title>
+      <link>http://gomex.me/tags/hooli/</link>
+      <pubDate>Sun, 02 Oct 2016 15:59:13 -0400</pubDate>
+      
+      <guid>http://gomex.me/tags/hooli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pied Piper</title>
+      <link>http://gomex.me/tags/pied-piper/</link>
+      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      
+      <guid>http://gomex.me/tags/pied-piper/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

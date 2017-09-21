@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gomex&#39;s Page</title>
+    <link>http://gomex.me/</link>
+    <description>Recent content on Gomex&#39;s Page</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 02 Oct 2016 22:55:05 -0400</lastBuildDate>
+    
+	<atom:link href="http://gomex.me/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>http://gomex.me/about/</link>
+      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      
+      <guid>http://gomex.me/about/</guid>
+      <description>Erlich administers the Hacker Hostel, a tech incubator where Richard, Big Head, Dinesh, and Gilfoyle live and work in exchange for 10 percent of their potential businesses. Erlich clings to his glory days, when he sold aviation start-up Aviato, a move that, at least in his mind, qualifies him to be a svengali lording over other tech nerds. He still drives a car emblazoned with multiple Aviato logos and smokes copious amounts of weed.</description>
+    </item>
+    
+    <item>
+      <title>CodeRag</title>
+      <link>http://gomex.me/coderag/</link>
+      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      
+      <guid>http://gomex.me/coderag/</guid>
+      <description>Notes: This article originally appeared in CodeRag.
+Code/Rag has always been more than just another online tech blog. We strive to be part of the tech community—serving an essential, fundamental look at what’s going on in the valley. It’s why our tagline is “Know Your Code.” We think a tech news publication should know the basics. Be the source. Get down to brass tacks. We can do that because we’re part of the very ecosystem we’re reporting on.</description>
+    </item>
+    
+    <item>
+      <title>Começando</title>
+      <link>http://gomex.me/blog/first/</link>
+      <pubDate>Sun, 02 Oct 2016 15:59:13 -0400</pubDate>
+      
+      <guid>http://gomex.me/blog/first/</guid>
+      <description>TL;DR O texto será sobre o processo de criar um blog usando um gerenciador de sites estáticos, usando templates e exemplos prontos, e por fim, como hospedar ele no github.
+Público alvo Esse texto é para pessoas técnicas, principalmente aqueles que tem familiaridade com github, mas eu acredito que qualquer pessoa, mesmo sem muito conhecimento técnico possa entender ao menos as partes mais importantes desse texto.
+Introdução Eu já tenho um blog, mas ele está em um wordpress, uma plataforma CMS, que por mais que sua proposta tenha como foco a usabilidade, manter ela a nível de infra não é uma tarefa extremamente simples.</description>
+    </item>
+    
+    <item>
+      <title>Gavin Belson</title>
+      <link>http://gomex.me/blog-en/first/</link>
+      <pubDate>Sun, 02 Oct 2016 15:59:13 -0400</pubDate>
+      
+      <guid>http://gomex.me/blog-en/first/</guid>
+      <description>Note: This article originally appeared in CodeRag.
+Gavin Belson’s name has long been synonymous with innovation—but beyond his work at Hooli, do we even know the man behind the rampant success? In a Code/Rag exclusive, Belson revealed to us 10 things about himself that aren’t common knowledge.
+ He’s a nature fanatic! “It’s important to me that Hooli has an effective recycling program, and a personal passion of mine is donating to elephant sanctuaries.</description>
+    </item>
+    
+  </channel>
+</rss>

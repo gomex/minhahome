@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="description" content="Simple minimalist theme">
+<meta name="keywords" content="minimalist,blog,goa,hugo,developer">
+
+<base href="http://gomex.me/">
+
+<title>Gomex&#39;s Page</title>
+
+<meta name="generator" content="Hugo 0.26" />
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://gomex.me/css/main.css">
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<body lang="en-US">
+<div class="container">
+
+
+<header class="row text-left title">
+  <h1 class="title">Começando</h1>
+</header>
+<section id="category-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-left meta">
+      PUBLISHED ON OCT 2, 2016 
+      
+      
+      — 
+      
+      
+      <a class="meta" href="/categories/first">FIRST</a>
+      
+      
+    </h6>
+  </div>
+  
+</section>
+<section id="content-pane" class="row">
+  <div class="col-md-12 text-justify content">
+    
+
+<h2 id="tl-dr">TL;DR</h2>
+
+<p>O texto será sobre o processo de criar um blog usando um gerenciador de
+sites estáticos, usando templates e exemplos prontos, e por fim, como
+hospedar ele no github.</p>
+
+<h2 id="público-alvo">Público alvo</h2>
+
+<p>Esse texto é para pessoas técnicas, principalmente aqueles que tem familiaridade
+com github, mas eu acredito que qualquer pessoa, mesmo sem muito conhecimento
+técnico possa entender ao menos as partes mais importantes desse texto.</p>
+
+<h3 id="introdução">Introdução</h3>
+
+<p>Eu já tenho um <a href="http://techfree.com.br">blog</a>, mas ele está em um wordpress, uma
+plataforma CMS, que por mais que sua proposta tenha como foco a usabilidade, manter
+ela a nível de infra não é uma tarefa extremamente simples. Quando falo simples,
+estou querendo reduzir à de fato não ter trabalho praticamente nenhum para ter
+uma infraestrutura adequada para publicar apenas textos com imagens.</p>
+
+<p>Venho há algum tempo &ldquo;namorando&rdquo; a ideia de ter um site com conteúdo estático, com
+esses geradores mais famosos (<a href="https://gohugo.io/">hugo</a> e <a href="https://jekyllrb.com/">jekyll</a>)</p>
+
+<p>A idéia de utilizar conteúdo estático tem como objetivo não somente ser simples
+de manter, mas tamnbém utilizar menos recursos da máquina, uma vez que o site é
+modificado, ele é construído em um único momento e distribuído estáticamente
+para todos usuários, com isso não será necessário uso de banco de dados.</p>
+
+<h3 id="como-usar">Como usar</h3>
+
+<p>Depois de algumas conversas com <a href="http://somatorio.org/pt-br/">somatorio</a> resolvi
+usar o hugo. Fui no <a href="https://themes.gohugo.io">site</a> procurar alguns temas para
+meu novo blog, escolhi <a href="https://themes.gohugo.io/hugo-goa/">esse</a> baixe o
+<a href="https://github.com/shenoybr/hugo-goa-demo">demo</a> e o
+<a href="https://github.com/shenoybr/hugo-goa">template</a>.</p>
+
+<p>Primeiro crie um repositório na sua conta do github. Aqui eu usarei como exemplo
+o meu repositório <strong>git@github.com:gomex/minhahome.git</strong>, mas no seu caso deverá
+ser o que você criou para você.</p>
+
+<p>Depois iremos utilizar o exemplo de blog, o template nesse novo repositório.</p>
+
+<p>Como usaremos hugo, manteremos sempre a branch hugo para o nosso conteúdo editável,
+ uma vez que a branch master será usada para depositar o site gerado pelo hugo
+no github.</p>
+
+<p>Basicamente os comandos foram:</p>
+
+<pre><code class="language-bash">git clone git@github.com:shenoybr/hugo-goa-demo.git minhahome
+cd minhahome
+rm -fr .git
+git init
+git checkout -b hugo
+cd themes
+rm -fr hugo-goa
+git clone git@github.com:shenoybr/hugo-goa.git
+cd ..
+git add .
+git commit -m &quot;First commit&quot;
+git remote add origin git@github.com:gomex/minhahome2.git
+git push origin hugo
+</code></pre>
+
+<p>Pra usar o demo bastou eu modificar os dados do <code>config.toml</code> e iniciar um
+docker para eu já ir visualizando as modificações:</p>
+
+<pre><code class="language-bash">docker container run --rm -it -v $(pwd):/src -p 1313:1313 jojomi/hugo hugo server -w -v --bind 0.0.0.0
+</code></pre>
+
+<p><strong>Obs</strong>: Esse comando deve ser executado na raiz do projeto <code>minhahome</code>.</p>
+
+<p>Acesse o seguinte endereço no seu navegador: <a href="http://localhost:1313">http://localhost:1313</a></p>
+
+<p><strong>Obs</strong>: Verifique o parâmetro <code>baseurl</code> dentro do arquivo <code>config.toml</code>,
+pois se ele está apontando para alguma subpasta, você deve usar ela no seu navegador
+também, por padrão esse parâmetro vem <code>https://shenoybr.github.io/hugo-goa-demo/</code>
+se você não mudar esse parâmetro o endereço acessado no navegador deve ser:</p>
+
+<p><a href="http://localhost:1313/hugo-goa-demo/">http://localhost:1313/hugo-goa-demo/</a></p>
+
+<p>Para modificar sua foto, basta colocar sua foto na pasta static/img e depois
+referênciar ela no <code>config.toml</code> no parâmetro <code>authorimage</code>.</p>
+
+<h3 id="fazendo-deploy-em-produção">Fazendo deploy em produção</h3>
+
+<p>Depois que o conteúdo está organizado e já condiz com suas expectativas, é hora
+de publicar ele na internet, certo? Agora vem a pergunta: <strong>&ldquo;Onde hospedar?&rdquo;</strong>
+Pra nossa sorte existe o <a href="https://pages.github.com/">Github pages</a>, que hospeda
+gratuítamente conteúdos estáticos.</p>
+
+<p>Acesse as configurações do seu repositório do github e habilite o github pages na
+branch master.</p>
+
+<p><img src="img/github-pages.png" alt="Travis" /></p>
+
+<p>No meu caso, eu comprei um novo domínio, pois minha mudança de um blog para o
+outro será gradual.</p>
+
+<p>Para enviar seu site para o Github de forma automatizada, eu usei o
+<a href="https://travis-ci.org/">travis-ci</a>. Primeiro criei o arquivo <code>.travis.yml</code>
+na raiz do seu projeto com o seguinte conteúdo:</p>
+
+<pre><code class="language-yml">branches:
+  only:
+  - hugo
+
+sudo: required
+
+services:
+  - docker
+
+script:
+  - docker container run --rm -it -v $(pwd):/src jojomi/hugo hugo
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  target_branch: master
+  local_dir: public
+  fqdn: gomex.me # Set your own fqdn here
+  on:
+    branch: hugo
+</code></pre>
+
+<p><strong>Obs:</strong> Lembre-se de trocar o <strong>fqdn</strong> para o seu domínio.</p>
+
+<p>Como podem perceber no arquivo acima, estou utilizando uma branch chamada
+<strong>hugo</strong> para colocar os arquivos editáveis do site e o <strong>travis-ci</strong> fará o
+deploy na branch <strong>master</strong> no meu repositório do github. É como se a branch
+<strong>hugo</strong> seja uma versão em desenvolvimento e os artefatos pós construção (que
+  nesse caso são as páginas estáticas) serão depositadas.</p>
+
+<p>Acesse o <a href="https://travis-ci.org">site do travis</a>, crie seu usuário, efetue login
+e crie o link da sua conta do travis com a do github e então habilite o repositório
+criado no github em sua conta do travis.</p>
+
+<p><img src="img/travis2.png" alt="Travis" /></p>
+
+<p>Aproveite e desabilite o build em branch que não tenha o arquivo <strong>.travis.yml</strong>.</p>
+
+<p><img src="img/travis3.png" alt="Travis" /></p>
+
+<h3 id="tokens-de-acesso">Tokens de acesso</h3>
+
+<p>O Travis precisa de acesso a fazer deploy em seu repositório github e pra isso
+precisaremos criar um token pra isso. Siga <a href="https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/">essa documentação</a>
+para criar o seu.</p>
+
+<p>Acesse a configuração do seu repositório no travis-ci e adicione a variável  <code>GITHUB_TOKEN</code>
+com o valor obtido da criação do token no github.</p>
+
+<p>Depois disso faça qualquer novo commit e push no seu repositório para ativar o
+travis-ci, ou clique no botão rebuild na interface gráfica.</p>
+
+<p>Pronto! Seu site estará pronto!</p>
+
+  </div>
+</section>
+<section id="tag-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-right meta">
+      
+      
+      TAGS: 
+      
+      
+      <a class="meta" href="/tags/blog">BLOG</a>, 
+      
+      <a class="meta" href="/tags/first">FIRST</a>
+      
+      
+    </h6>
+  </div>
+  
+</section>
+
+
+
+
+<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "gomex-me" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+<section id="menu-pane" class="row menu text-center">
+  
+  
+  
+  
+  
+  <h4 class="text-center"><a class="menu-item" href="http://gomex.me/">home</a></h4>
+</section>
+
+
+
+<footer class="row text-center footer">
+  <hr />
+  
+  <h6 class="text-center copyright">© 2017. Rafael Gomes. <a href="http://creativecommons.org/licenses/by/3.0/">Some Rights Reserved</a>.</h6>
+  
+  <h6 class="text-center powered">Powered by <a href="https://gohugo.io/">Hugo</a> &amp; <a href="https://github.com/shenoybr/hugo-goa">Goa</a>.</h6>
+  
+  
+</footer>
+
+</div>
+
+
+
+
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'XYZ', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+

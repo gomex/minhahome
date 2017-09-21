@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>First on Gomex&#39;s Page</title>
+    <link>http://gomex.me/tags/first/</link>
+    <description>Recent content in First on Gomex&#39;s Page</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 02 Oct 2016 15:59:13 -0400</lastBuildDate>
+    
+	<atom:link href="http://gomex.me/tags/first/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Começando</title>
+      <link>http://gomex.me/blog/first/</link>
+      <pubDate>Sun, 02 Oct 2016 15:59:13 -0400</pubDate>
+      
+      <guid>http://gomex.me/blog/first/</guid>
+      <description>TL;DR O texto será sobre o processo de criar um blog usando um gerenciador de sites estáticos, usando templates e exemplos prontos, e por fim, como hospedar ele no github.
+Público alvo Esse texto é para pessoas técnicas, principalmente aqueles que tem familiaridade com github, mas eu acredito que qualquer pessoa, mesmo sem muito conhecimento técnico possa entender ao menos as partes mais importantes desse texto.
+Introdução Eu já tenho um blog, mas ele está em um wordpress, uma plataforma CMS, que por mais que sua proposta tenha como foco a usabilidade, manter ela a nível de infra não é uma tarefa extremamente simples.</description>
+    </item>
+    
+  </channel>
+</rss>
